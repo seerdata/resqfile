@@ -2,8 +2,8 @@
 To install the simulator
 
 ```
-git clone git@github.com:stormasm/spinnakr-rule-simulator.git
-cd spinnakr-rule-simulator
+git clone git@github.com:stormasm/resqfile.git
+cd resqfile
 bundle install
 ```
 
