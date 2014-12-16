@@ -42,12 +42,12 @@ class MsgMath < Msgbase
     @timeseriesim.get_one_noisy_value(n,start_slope,noise)
   end
 
-  def buildmsg(time,value)
+  def buildmsg(token,key,time,value)
     msg_hash = Hash.new
-    msg_hash[:access_token] = get_token_id
+    msg_hash[:access_token] = token
     dimension = get_dimension
     msg_hash[:dimension] = dimension
-    msg_hash[:key] = get_key
+    msg_hash[:key] = key
     msg_hash[:value] = value.to_s
     msg_hash[:created_at] = time
     msg_hash[:interval] = get_interval
@@ -56,6 +56,8 @@ class MsgMath < Msgbase
   end
 
   def build_n_messages(n)
+    token = get_token_id
+    key = get_key
     x = n + 1
     messages = []
     arytime = get_time_array(x)
@@ -68,7 +70,7 @@ class MsgMath < Msgbase
       print i, '. '
       print arytime[i], ' -> '
       print arytimeseries[i]; puts
-      mymsg = buildmsg(arytime[i],arytimeseries[i])
+      mymsg = buildmsg(token,key,arytime[i],arytimeseries[i])
       messages.push(mymsg)
     end
     messages
