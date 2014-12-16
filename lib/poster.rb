@@ -2,6 +2,7 @@
 require_relative './post'
 require_relative './rulecomparator'
 require_relative './ruleobserver'
+require_relative './math/msgmath'
 require 'json'
 
 class Poster
@@ -31,6 +32,11 @@ class Poster
         puts 'Inside Observer'
       end
       RuleObserver.new(options)
+    elsif options.z == 'math'
+      if options.verbose
+        puts 'Inside Math'
+      end
+      MsgMath.new(options)
     else
       print 'poster.rb ', options.z, ' is not a supported rule type'
       puts

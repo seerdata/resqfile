@@ -11,10 +11,11 @@ class Options
 
     ### 1 = URL, 2 = File, 3 = Queue
 
-    options.x = "1"
+    options.x = "2"
 
     ### One can post to a URL, File, or Queue
 
+    options.d = 1
     options.e = "test.spnee.rules"
     options.f = "mydata.json"
 
@@ -26,7 +27,7 @@ class Options
 
     options.y = "api/1.0/rule"
     # This is also the rule type
-    options.z = "comparator"
+    options.z = "math"
 
     options.m = "job-skills"
     options.n = 2
@@ -70,6 +71,10 @@ class Options
       end
 
       # Integer Options
+
+      opts.on("-d Days", Integer, "Integer Time simulation interval") do |x|
+        options.d = x
+      end
 
       opts.on("-n Messages", Integer, "Integer Send in n messages") do |x|
         options.n = x
