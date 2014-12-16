@@ -21,7 +21,7 @@ class RuleBase
     ['hours','days','weeks','months'].sample
   end
 
-  def build_n_rules(n)
+  def build_n_messages(n)
     x = n - 1
     rules = []
     for i in 0..x
