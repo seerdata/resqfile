@@ -71,7 +71,7 @@ class Options
 
       # Integer Options
 
-      opts.on("-n Rules", Integer, "Integer Send in n rules") do |x|
+      opts.on("-n Messages", Integer, "Integer Send in n messages") do |x|
         options.n = x
       end
 
