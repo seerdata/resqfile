@@ -32,7 +32,7 @@ class Poster
         puts 'Inside Observer'
       end
       RuleObserver.new(options)
-    elsif options.z == 'math'
+    elsif options.z == 'event'
       if options.verbose
         puts 'Inside Math'
       end

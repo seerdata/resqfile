@@ -11,12 +11,13 @@ class Options
 
     ### 1 = URL, 2 = File, 3 = Queue
 
-    options.x = "2"
+    options.x = "3"
 
     ### One can post to a URL, File, or Queue
 
     options.d = 1
-    options.e = "test.spnee.rules"
+    #options.e = "test.spnee.rules"
+    options.e = "test.spnee.customer"
     options.f = "mydata.json"
 
     ### Components of the URL
@@ -25,9 +26,14 @@ class Options
 
     ### Endpoint Part1 and Part2
 
-    options.y = "api/1.0/rule"
+    # This is for rules
+    #options.y = "api/1.0/rule"
+    # This is for math events
+    options.y = "api/1.0"
     # This is also the rule type
-    options.z = "math"
+    options.z = "event"
+    #options.z = "comparator"
+    #options.z = "observer"
 
     options.m = "job-skills"
     options.n = 2
