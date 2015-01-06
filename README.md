@@ -6,7 +6,7 @@ Because data can be written any one of these three places.
 To install resqfile
 
 ```
-git clone git@github.com:stormasm/resqfile.git
+git clone https://github.com/stormasm/resqfile.git
 cd resqfile
 bundle install
 ```
