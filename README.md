@@ -15,10 +15,10 @@ bundle install
 
 For install instructions to run Spn.ee go
 [here]
-(https://github.com/stormasm/spinnakr-spne)
+(https://github.com/spinnakr/spnee-ruby)
 
 After Spn.ee is up and running then go to the lib directory
-in the rule simulator.
+in the resqfile simulator.
 
 **To run the simulator you must be in the lib directory**
 
