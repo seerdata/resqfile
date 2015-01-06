@@ -14,8 +14,8 @@ bundle install
 To run resqfile: **Rabbitmq**, **Redis** and **Spn.ee** must first be running
 
 For install instructions to run Spn.ee go
-[here].
-(https://github.com/spinnakr/spnee-ruby)
+[here]
+(https://github.com/spinnakr/spnee-ruby).
 
 After Spn.ee is up and running then go to the lib directory
 in the resqfile simulator.
@@ -65,5 +65,5 @@ ruby sim.rb -n 10
 ```
 
 For more details go
-[here].
-(https://github.com/stormasm/resqfile/blob/master/doc/notes.md)
+[here]
+(https://github.com/stormasm/resqfile/blob/master/doc/notes.md).
