@@ -54,11 +54,11 @@ If you want a different dimension string then you can issue this command.
 ruby sim.rb -m weather-city
 ```
 
-#### Number of rules
+#### Number of data points
 
-The default number of data points that get published is 2
+The default number of data points that get published is 3
 
-To generate more than 2 data points run this command
+To generate more than 3 data points run this command
 
 ```
 ruby sim.rb -n 10
