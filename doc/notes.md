@@ -58,7 +58,7 @@ r sim.rb -x 2 -f 'yourdata.json'
 
 This will write data out to the file **yourdata.json**
 
-#### Sending data to a URL endpoint
+##### Sending data to an event URL endpoint
 
 ```
 ruby sim.rb -x 1
@@ -66,4 +66,18 @@ ruby sim.rb -x 1
 
 This POSTS data to the default URL http://localhost:4567/api/1.0/event
 
-#### String Endpoint Part 2 and RuleType
+##### Sending data to a rule comparator URL endpoint
+
+```
+r sim.rb -x 1 -z comparator -y api/1.0/rule
+```
+
+This POSTS data to the default URL http://localhost:4567/api/1.0/rule/comparator
+
+##### Sending data to a rule observer URL endpoint
+
+```
+r sim.rb -x 1 -z observer -y api/1.0/rule
+```
+
+This POSTS data to the default URL http://localhost:4567/api/1.0/rule/observer
