@@ -68,3 +68,7 @@ To send more than 2 rules run this command
 ```
 ruby sim.rb -n 10
 ```
+
+For more details go
+[here]
+(https://github.com/stormasm/resqfile/blob/master/doc/notes.md)
