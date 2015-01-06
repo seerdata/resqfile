@@ -1,5 +1,9 @@
 
-To install the simulator
+Resqfile stands for **REST, QUEUE, FILE**
+
+Because data can be written any one of these three places.
+
+To install resqfile
 
 ```
 git clone git@github.com:stormasm/resqfile.git
@@ -7,7 +11,7 @@ cd resqfile
 bundle install
 ```
 
-**To run the simulator redis and Spn.ee must first be running**
+**To run resqfile rabbitmq, redis and Spn.ee must first be running**
 
 For install instructions to run Spn.ee go
 [here]
@@ -26,7 +30,7 @@ ruby sim.rb -h
 
 #### Default Use
 
-To run the rule simulator with no options simply run this command
+To run the resqfile simulator with no options simply run this command
 
 ```
 ruby sim.rb
@@ -38,15 +42,6 @@ All output from the simulator is available in verbose mode
 
 ```
 ruby sim.rb -v
-```
-
-#### Event Type
-
-The default Event Type is **comparator**, to send in an **observer** Event Type
-run this command.
-
-```
-ruby sim.rb -t observer
 ```
 
 #### Dimension String
@@ -61,9 +56,9 @@ ruby sim.rb -m weather-city
 
 #### Number of rules
 
-The default number of rules that get sent to redis is 2
+The default number of data points that get published is 2
 
-To send more than 2 rules run this command
+To generate more than 2 data points run this command
 
 ```
 ruby sim.rb -n 10
