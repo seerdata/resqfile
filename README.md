@@ -11,10 +11,10 @@ cd resqfile
 bundle install
 ```
 
-**To run resqfile rabbitmq, redis and Spn.ee must first be running**
+To run resqfile: **Rabbitmq**, **Redis** and **Spn.ee** must first be running
 
 For install instructions to run Spn.ee go
-[here]
+[here].
 (https://github.com/spinnakr/spnee-ruby)
 
 After Spn.ee is up and running then go to the lib directory
@@ -65,5 +65,5 @@ ruby sim.rb -n 10
 ```
 
 For more details go
-[here]
+[here].
 (https://github.com/stormasm/resqfile/blob/master/doc/notes.md)
