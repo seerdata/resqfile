@@ -58,7 +58,7 @@ r sim.rb -x 2 -f 'yourdata.json'
 
 This will write data out to the file **yourdata.json**
 
-#### Posting event data to a URL endpoint
+#### Sending data to a URL endpoint
 
 ```
 ruby sim.rb -x 1
