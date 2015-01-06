@@ -32,6 +32,10 @@ class Post
 
   def process_url(options,data)
     url = buildURL(options)
+    if options.verbose == true
+      print 'URL = '
+      puts url
+    end
     post_rest(data,url)
   end
 
