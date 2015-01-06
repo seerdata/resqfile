@@ -20,15 +20,15 @@ Usage: sim.rb [options]
 
 This means that data can be sent to one of three places.
 
-# Data can be sent to a URL endpoint
-# Data can be published to a RabbitMQ channel
-# Data can be written to a file
+* Data can be sent to a URL endpoint
+* Data can be published to a RabbitMQ channel
+* Data can be written to a file
 
 The current default is **3**
 
-# 1 = URL
-# 2 = File
-# 3 = Queue
+* 1 = URL
+* 2 = File
+* 3 = Queue
 
 #### Sending data to RabbitMQ
 
