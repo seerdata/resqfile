@@ -19,7 +19,7 @@ The current **x** option default is **1**
 ruby sim.rb
 ```
 
-This POSTS data to the default URL http://localhost:4567/api/1.0/event
+This POSTS data to the default URL *http://localhost:4567/api/1.0/event*
 
 ##### Sending data to a rule comparator URL endpoint
 
@@ -27,7 +27,7 @@ This POSTS data to the default URL http://localhost:4567/api/1.0/event
 ruby sim.rb -z comparator -y api/1.0/rule
 ```
 
-This POSTS data to the default URL http://localhost:4567/api/1.0/rule/comparator
+This POSTS data to the default URL *http://localhost:4567/api/1.0/rule/comparator*
 
 ##### Sending data to a rule observer URL endpoint
 
@@ -35,7 +35,7 @@ This POSTS data to the default URL http://localhost:4567/api/1.0/rule/comparator
 ruby sim.rb -z observer -y api/1.0/rule
 ```
 
-This POSTS data to the default URL http://localhost:4567/api/1.0/rule/observer
+This POSTS data to the default URL *http://localhost:4567/api/1.0/rule/observer*
 
 #### Sending data to a File
 
