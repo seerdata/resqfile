@@ -11,7 +11,7 @@ class Options
 
     ### 1 = URL, 2 = File, 3 = Queue
 
-    options.x = "3"
+    options.x = "1"
 
     ### One can post to a URL, File, or Queue
 
