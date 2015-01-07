@@ -1,5 +1,3 @@
- spnee-ruby-test
-=================
 
 These tests enable you to test your configuration and send in test data to our system.
 
