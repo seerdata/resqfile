@@ -3,9 +3,7 @@ For more details go
 [here]
 (https://github.com/stormasm/resqfile/blob/master/doc/notes.md).
 
-Resqfile stands for **REST, QUEUE, FILE**
-
-Because data can be written any one of these three places.
+Resqfile stands for **REST, QUEUE, FILE** because data can be written to any one of these three places.
 
 To install resqfile
 
@@ -21,8 +19,7 @@ For install instructions to run Spn.ee go
 [here]
 (https://github.com/spinnakr/spnee-ruby).
 
-After Spn.ee is up and running then go to the lib directory
-in the resqfile simulator.
+After Spn.ee is up and running then go to the lib directory.
 
 **To run the simulator you must be in the lib directory**
 
