@@ -39,7 +39,7 @@ class Options
       end
 
       opts.on("-z Ruletype", "Comparator or Observer") do |q|
-        options.e = q
+        options.z = q
       end
 
       opts.on("-f File", "File name") do |f|
