@@ -8,38 +8,23 @@ ruby filevent.rb -f mydata.json
 ```
 
 Reads JSON data from the file mydata.json and makes a REST API call to the
-endpoint
-
-**http://localhost:4567/api/1.0/event**
-
-```
-ruby filevent.rb -h
-```
-
-To see other parameters run this command.
+endpoint **http://localhost:4567/api/1.0/event**
 
 #### filerule.rb
 
 ```
-ruby filerule.rb -f mydata.json
+ruby filerule.rb -f rulecomparator.json
 ```
 
-Reads JSON data from the file mydata.json and makes a REST API call to the
-endpoint
-
-**http://localhost:4567/api/1.0/rule/comparator**
+Reads JSON data from the file and makes a REST API call to the
+endpoint **http://localhost:4567/api/1.0/rule/comparator**
 
 ```
-ruby filerule.rb -f ruledata.json
+ruby filerule.rb -z observer -f ruleobserver.json
 ```
 
-```
-ruby filerule.rb -z observer -f ruledata.json
-```
-
-**http://localhost:4567/api/1.0/rule/observer**
-
-To see other parameters run this command.
+Reads JSON data from the file and makes a REST API call to the
+endpoint **http://localhost:4567/api/1.0/rule/observer**
 
 #### queueread.rb
 
