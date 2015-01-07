@@ -1,4 +1,8 @@
 
+For more details go
+[here]
+(https://github.com/stormasm/resqfile/blob/master/doc/notes.md).
+
 Resqfile stands for **REST, QUEUE, FILE**
 
 Because data can be written any one of these three places.
