@@ -15,10 +15,11 @@ class Options
     options.f = ""
     options.n = "localhost"
     options.p = "4567"
-    options.e = "api/1.0/event"
+    options.e = "api/1.0/rule"
+    options.z = "comparator"
 
     opt_parser = OptionParser.new do |opts|
-      opts.banner = "Usage: sim.rb [options]"
+      opts.banner = "Usage: filerule.rb [options]"
 
       # Boolean switch.
       opts.on("-v", "Run verbosely") do |v|
@@ -34,6 +35,10 @@ class Options
       end
 
       opts.on("-e Endpoint", "Endpoint URL") do |q|
+        options.e = q
+      end
+
+      opts.on("-z Ruletype", "Comparator or Observer") do |q|
         options.e = q
       end
 
@@ -59,7 +64,8 @@ class Publisher
       hostname = options.n
       port = options.p
       endpoint = options.e
-      url = "http://" + hostname + ":" + port + "/" + endpoint
+      rule = options.z
+      url = "http://" + hostname + ":" + port + "/" + endpoint + "/" + rule
     end
 
     ## This function is not currently being used but is here for reference
