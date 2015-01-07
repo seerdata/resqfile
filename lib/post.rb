@@ -45,30 +45,26 @@ class Post
 
   def process_file(options,data)
     filename = options.f
-
     if filename == ""
       puts "Please enter a filename"
       exit
     end
-
-    json_array_length = data.length
-    count = 1
-
-    if json_array_length != 0
-      fx = File.open(filename.to_s,"w")
-      fx.write("[")
-      data.each do |item|
-        myjson = JSON::generate(item)
-        fx.write(myjson)
-        if count < json_array_length
-          fx.write(",")
-          count = count + 1
-          print 'count = ', count; puts
-        end
+    n = data.length
+    x = n - 1
+    count = 0
+    fx = File.open(filename.to_s,"w")
+    fx.write("[")
+    for i in 0..x
+      myjson = data[i].to_json
+      fx.write(myjson)
+      if count < x
+        fx.write(",")
+        count = count + 1
+        print 'count = ', count; puts
       end
-      fx.write("]")
-      print 'wrote json to filename ', options.f; puts
     end
+    fx.write("]")
+    print 'wrote json to filename ', filename; puts
   end
 
   #
