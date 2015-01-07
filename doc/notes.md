@@ -55,13 +55,13 @@ This will write data out to the file **yourdata.json**
 ruby sim.rb -z comparator -y api/1.0/rule -x 2 -f rulecomparator.json
 ```
 
-This writes comparator rule data to the file *rulecomparator.json*
+This writes comparator rule data to the file **rulecomparator.json**
 
 ```
 ruby sim.rb -z observer -y api/1.0/rule -x 2 -f ruleobserver.json
 ```
 
-This writes observer rule data to the file *ruleobserver.json*
+This writes observer rule data to the file **ruleobserver.json**
 
 #### Sending data to RabbitMQ
 
