@@ -15,7 +15,7 @@ class MsgMath < Msgbase
   end
 
   def get_interval
-    ['hours','weeks','months']
+    ['hours','days','weeks','months']
   end
 
   def get_calculation
